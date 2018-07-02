@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 28, 2018 at 08:26 PM
--- Server version: 10.1.32-MariaDB
--- PHP Version: 7.2.5
+-- Generation Time: Jul 02, 2018 at 07:59 PM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 7.0.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `datamanipulation`
+-- Database: `information`
 --
 
 -- --------------------------------------------------------
@@ -39,9 +37,19 @@ CREATE TABLE `information` (
 --
 
 INSERT INTO `information` (`message_num`, `title`, `message`) VALUES
-(1, 'Test', 'I am running a test.'),
-(2, 'Test2', 'I am running another test.'),
-(3, 'Test3', 'I am running yet another test.');
+(1, 'Access CMD Commands', 'c:\\xamppmysqlinmysql -u root'),
+(2, 'Check Databases', 'SHOW databases;'),
+(3, 'Check User for privileges', 'Use select user();'),
+(4, 'Create a table', 'CREATE TABLE tablename (inputs and datatypes.'),
+(5, 'Discover columns and datatypes', 'DESCRIBE information'),
+(6, 'Remove a column', 'ALTER TABLE information DROP columname'),
+(7, 'Rename a Table', 'ALTER TABLE information RENAME facts'),
+(8, 'Select a database', 'USE information;'),
+(9, 'Add a column', 'ALTER TABLE information DATATYPE;'),
+(11, 'Add a column', 'ALTER TABLE information DATATYPE;'),
+(12, 'Rename a column', 'ALTER TABLE information CHANGE name1 name2 DATATYPE);'),
+(13, 'Delete a row of data', 'DELETE FROM information WHERE column=attribute'),
+(14, 'Remove a table', 'DROP TABLE tablename');
 
 --
 -- Indexes for dumped tables
@@ -61,9 +69,7 @@ ALTER TABLE `information`
 -- AUTO_INCREMENT for table `information`
 --
 ALTER TABLE `information`
-  MODIFY `message_num` int(13) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-COMMIT;
-
+  MODIFY `message_num` int(13) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
